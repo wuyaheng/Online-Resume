@@ -12,6 +12,17 @@
 
     <style>
     @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+    body { 
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),url('https://cdn.glitch.com/2e860639-24bb-4041-8055-aed7de1c1244%2Fimg-9.jpeg?v=1581869497663') ;
+        background-position: top center;
+        background-repeat:  no-repeat;
+        background-attachment: fixed;
+        background-size:  cover;
+    }
+
     #logo {
         font-family: 'Dancing Script', cursive;
     }
@@ -41,12 +52,16 @@
     .card-title {
         font-weight: 500 !important;
     }
+
+    .card {
+        border: none !important;
+    }
     </style>
  
 </head>
 <body>
 
-<nav class="nav-wrapper #ffcc80 orange lighten-3">
+<nav class="nav-wrapper #f9a825 yellow darken-3">
     <div class="container">
         <a href="#" class="brand-logo" id="logo">Phoebe Yaheng Wu</a>
         <a href="#" class="sidenav-trigger" data-target="mobile-links">
@@ -71,7 +86,7 @@
     <div class="container-fluid mt-4">
         <div class="row">
             <div class="col-md-3 justify-content-center">
-                <div class="card shadow card-height">
+                <div class="card shadow">
                     <div class="inner">
                         <img src="https://cdn.glitch.com/2e860639-24bb-4041-8055-aed7de1c1244%2Fimg-project1.jpeg?v=1584760380680" class="card-img-top" alt="campaign image">
                     </div>
@@ -84,7 +99,7 @@
                   </div>
             </div>
             <div class="col-md-3 justify-content-center">
-                <div class="card shadow card-height">
+                <div class="card shadow">
 
                     <div class="card-body text-center">
                       <h5 class="card-title">Weather Forecast App</h5>
@@ -98,7 +113,7 @@
                   </div>
             </div>
             <div class="col-md-3 justify-content-center">
-                <div class="card shadow card-height">
+                <div class="card shadow">
                     <div class="inner">
                     <img src="https://cdn.glitch.com/2e860639-24bb-4041-8055-aed7de1c1244%2FNewYorkTimes2.jpg?v=1583955630273" class="card-img-top" alt="python image"> 
                     </div>
@@ -112,7 +127,7 @@
         
 
             <div class="col-md-3 justify-content-center">
-                <div class="card shadow card-height">
+                <div class="card shadow">
 
                     <div class="card-body text-center">
                       <h5 class="card-title">GitHub Finder</h5> 
