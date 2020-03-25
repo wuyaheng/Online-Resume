@@ -6,16 +6,116 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Phoebe Yaheng Wu</title>
 
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+    #logo {
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .nav-text {
+        font-weight: 450;
+    }
+
+    a:hover {
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+    }
+
+    .icon-bar {
+      position: fixed;
+      top: 20%;
+      right: 0%;
+    }
+
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+
+
+    #github {
+      background: #333;
+      color: white;     
+    }
+    #github:hover {
+      background-color: #ffcc80;
+    }
+    #facebook {
+      background: #3B5998;
+      color: white;
+    }
+    #facebook:hover {
+      background-color: #ffcc80;
+    }
+    #twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    #twitter:hover {
+      background-color: #ffcc80;
+    }
+    #linkedin {
+      background: #007bb5;
+      color: white;
+    }
+    #linkedin:hover {
+      background-color: #ffcc80;
+    }
+    #youtube {
+      background: #bb0000;
+      color: white;
+    }
+    #youtube:hover {
+      background-color: #ffcc80;
+    }
+    #instagram {
+      background: #e1306c;
+      color: white;
+    }
+    #instagram:hover {
+      background-color: #ffcc80;
+    }
+
+
+    </style>
   
 </head>
 <body>
+
+    <nav class="nav-wrapper #ffcc80 orange lighten-3">
+      <div class="container">
+          <a href="#" class="brand-logo" id="logo">Phoebe Yaheng Wu</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-links">
+              <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down nav-text">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="about.html">About</a></li> 
+          </ul>
+      </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+  </ul>
+
+
    
 
-              <!-- container for banner text -->
+ 
               <div class="container">
                   <div class="row">
                       <div class="col-md-12">
@@ -25,34 +125,7 @@
                               <p>Accountant <span>&amp;</span> Programmer</p>
 
 
-                              <div class="container">
-  
-                                <!-- Social buttons -->
-                                <ul class="list-unstyled list-inline">
-                                  <li class="list-inline-item">
-                                    <a href="https://twitter.com/YahengWu" target="_blank" class="btn-floating btn-lg btn-tw" type="button" role="button">
-                                      <i class="fab fa-twitter"> </i>
-                                    </a>
-                                  </li>
-                                  <li class="list-inline-item">
-                                    <a href="https://www.linkedin.com/in/yahengwu/" target="_blank" class="btn-floating btn-lg btn-li" type="button" role="button">
-                                      <i class="fab fa-linkedin-in"> </i>
-                                    </a>
-                                  </li>
-                                  <li class="list-inline-item">
-                                    <a href="mailto:wuyaheng2016@gmail.com" target="_blank" class="btn-floating btn-lg btn-tw" type="button" role="button">
-                                      <i class="fab fa-google-plus-g"> </i>
-                                    </a>
-                                  </li>
 
-                                  <li class="list-inline-item">
-                                    <a href="https://github.com/PhoebeYahengWu" target="_blank" class="btn-floating btn-lg btn-git" type="button" role="button">
-                                      <i class="fab fa-github"></i>
-                                    </a>
-                                  </li>
-                                </ul>
-                                <!-- Social buttons -->
-                          </div>
                           <!-- Download Resume Starts -->
 
                             <button type="button" class="btn btn-outline-warning"><a href="https://cdn.glitch.com/2e860639-24bb-4041-8055-aed7de1c1244%2FPhoebe%20(Yaheng)%20Wu%20Resume.pdf?v=1581874264348" target="_blank" class="resume" download>View My Resume</a></button> 
@@ -60,6 +133,45 @@
                       </div>
                   </div>
               </div>
+
+              <div class="icon-bar">
+             
+                <!-- Social buttons -->
+             
+                    <a href="https://twitter.com/YahengWu" target="_blank" id="twitter" class="waves-effect waves-light" type="button" role="button">
+                      <i class="fab fa-twitter"> </i>
+                    </a>
+                
+                
+                    <a href="https://www.linkedin.com/in/yahengwu/" target="_blank" id="linkedin" class="waves-effect waves-light" type="button" role="button">
+                      <i class="fab fa-linkedin-in"> </i>
+                    </a>
+                
+               
+                    <a href="https://www.youtube.com/channel/UCUiy0e6bdTxw9US54w4EHYA?view_as=subscriber" target="_blank" id="youtube" class="waves-effect waves-light" type="button" role="button">
+                      <i class="fab fa-youtube"> </i>
+                    </a>
+              
+                
+                    <a href="https://github.com/PhoebeYahengWu" target="_blank" id="github" class="waves-effect waves-light" type="button" role="button">
+                      <i class="fab fa-github"></i>
+                    </a>
+                 
+
+                 
+                    <a href="https://www.facebook.com/PhoebeYahengWu" target="_blank" id="facebook" class="waves-effect waves-light" type="button" role="button">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                
+
+               
+                    <a href="https://www.instagram.com/wuyaheng/?hl=en" target="_blank" id="instagram" class="waves-effect waves-light" type="button" role="button">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+   
+                <!-- Social buttons -->
+            
+          </div>
 
               
         </div>
@@ -73,5 +185,11 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  $(document).ready(function(){
+      $('.sidenav').sidenav();
+  })
+</script>
+
 </body>
 </html>
