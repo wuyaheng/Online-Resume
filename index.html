@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Phoebe Yaheng Wu</title>
+
+    <style type="text/css">
+
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Cookie&display=swap');
+
+    body {
+        line-height: 1.4;
+        font: 400 15px 'Roboto', sans-serif;
+        letter-spacing: 0.5px;
+        color: #333;
+    }
+
+    a {
+        outline: none;
+    }
+
+    .bg-header {
+        background: url('https://cdn.glitch.com/2e860639-24bb-4041-8055-aed7de1c1244%2Fimg-4.jpg?v=1581869370806') no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .header-bg-gray {
+        background-color: rgba(0,0,0,0.67);
+        min-height: 100vh;
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    .navbar {
+    padding: 3px 16px;
+    }
+
+    .navbar-nav>li>a {
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        outline: none;
+    }
+
+    .navbar-nav>li>a:hover {
+        border-top: 4px solid #ffffff;
+        border-bottom: 4px solid #ffffff;
+        padding: 4px 0;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        transition: 0.3s ease; 
+    }
+
+    .navbar-dark .navbar-toggler:hover, .navbar-dark .navbar-toggler:active {
+        background-color: rgba(255,255,255,0.2);
+        transition: 0.3s ease;
+    }
+
+    button:focus {
+        outline: none;
+        background-color: rgba(255,255,255,0.1);
+    }
+
+
+
+    /* banner text */
+    .banner-text {
+        border-left: 5px solid #be2525;
+        padding: 15px 40px;
+        color: #fff;
+        margin-top: 100px;
+    }
+
+    .banner-text h2, .banner-text p {
+        font: 400 40px 'Questrial', sans-serif;
+    }
+
+    .banner-text span {
+        font-family: monospace;
+    }
+
+    .decorate {
+        font-family: 'Cookie', cursive;
+    }
+
+    #logo {
+        font-family: 'Dancing Script', cursive;
+        color: #fff;
+    }
+
+    .container>ul>li>a>i {
+        color: #fff !important;
+    }
+
+    .fa-linkedin-in:hover {
+        color: #007bb5 !important;
+    }
+
+    .fa-google-plus-g:hover {
+        color: #dd4b39 !important;
+    }
+
+    .fa-twitter:hover {
+        color: #00aced !important;
+    }
+
+    .fa-github:hover {
+        color: #211f1f !important;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    button a {
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    button:hover {
+      box-shadow: 0 0 0 rgba(0,0,0,0) inset,
+        0 2px 2px rgba(0,0,0,.1),
+        0 4px 4px rgba(0,0,0,.1),
+        0 8px 8px rgba(0,0,0,.1);
+      outline: none;
+    }
+
+    button a:hover{
+      text-decoration: none;
+      color: #fff;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- header for navbar and banner text -->
+    <header class="container-fluid bg-header" id="home">
+        <div class="header-bg-gray">
+            <!-- navigation bar begins -->
+            <nav class="navbar navbar-expand-lg navbar bg navbar-fixed-top">
+                <a class="navbar-brand" href="#" id=logo>Phoebe Yaheng Wu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color: #fff; font-size:28px;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="portfolio.html">Portfolio</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a> 
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+              <!-- navigation bar ends -->
+
+              <!-- container for banner text -->
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <!-- banner text -->
+                          <div class="banner-text">
+                              <h2>Hi, I'm <span class="decorate">Phoebe</span></h2>
+                              <p>Accountant <span>&amp;</span> Programmer</p>
+
+
+                              <div class="container">
+  
+                                <!-- Social buttons -->
+                                <ul class="list-unstyled list-inline">
+                                  <li class="list-inline-item">
+                                    <a href="https://twitter.com/YahengWu" target="_blank" class="btn-floating btn-lg btn-tw" type="button" role="button">
+                                      <i class="fab fa-twitter"> </i>
+                                    </a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                    <a href="https://www.linkedin.com/in/yahengwu/" target="_blank" class="btn-floating btn-lg btn-li" type="button" role="button">
+                                      <i class="fab fa-linkedin-in"> </i>
+                                    </a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                    <a href="mailto:wuyaheng2016@gmail.com" target="_blank" class="btn-floating btn-lg btn-tw" type="button" role="button">
+                                      <i class="fab fa-google-plus-g"> </i>
+                                    </a>
+                                  </li>
+
+                                  <li class="list-inline-item">
+                                    <a href="https://github.com/PhoebeYahengWu" target="_blank" class="btn-floating btn-lg btn-git" type="button" role="button">
+                                      <i class="fab fa-github"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                                <!-- Social buttons -->
+                          </div>
+                          <!-- Download Resume Starts -->
+
+                            <button type="button" class="btn btn-outline-warning"><a href="https://cdn.glitch.com/2e860639-24bb-4041-8055-aed7de1c1244%2FPhoebe%20(Yaheng)%20Wu%20Resume.pdf?v=1581874264348" target="_blank" class="resume" download>View My Resume</a></button> 
+                            <!-- Download Resume Ends -->
+                      </div>
+                  </div>
+              </div>
+
+              
+        </div>
+        
+    </header>
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
