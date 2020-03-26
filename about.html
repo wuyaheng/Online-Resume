@@ -22,14 +22,18 @@
         background-attachment: fixed;
         background-size:  cover;
     }
- 
+
+    .avatar {
+        border: 0.3rem solid rgba(#fff, 0.3);
+        margin-top: -11rem;
+        margin-bottom: 1rem;
+        max-width: 18rem;
+    }
+
     #logo {
         font-family: 'Dancing Script', cursive;
     }
 
-    #myImage {
-        width:50%;
-    }
 
     .card {
         border: none;
@@ -183,22 +187,22 @@
 
 
 <div class="container-fluid">
-        <h3>About Me</h3>
-      <div class="row p-0 m-0">
-        <div class="col s12 p-0 m-0">
-          <div class="card">
+        <h3 class="pb-5">About Me</h3>
 
-            <div class="card-content">
-              <p>Hey there! I am Phoebe, an accountant and a front-end web developer. Thanks for visiting my website. As an accountant, my experience lies in reconciliations and P&L analysis, and I'm capable of data wrangling and visualization through SQL, Python and Tableau, while also skilled at coding in VBA to automate event processes. As a web developer, I focus on creating modern-look websites using HTML, CSS, JavaScript, jQuery, Bootstrap and Materialize. Outside of work, I love Zumba! I was an aerobic dancing instructor for three years. I also love watching stand-up comedy in my free time. Sometimes I try to throw some jokes into conversations with friends. Most times, they fall flat - but hey, I try.</p>
+        <div class="row pt-5 mt-2">
+          <div class="col-12 mt-5 p-0 m-0">
+            <div class="card">
+              <!-- <img class="card-img-top" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/oslo.jpg" alt="Bologna"> -->
+              <div class="card-body text-center">
+                <img class="avatar rounded-circle" src="https://cdn.glitch.com/cd99f035-ecbc-4ddd-9a8c-d2f6b5fff534%2Fpic.jpg?v=1572967387496" alt="Bologna">
+                <!-- <h4 class="card-title">Phoebe Yaheng Wu</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Accountant & Programmer</h6> -->
+                <p class="card-text">Hey there! I am Phoebe, an accountant and a front-end web developer. Thanks for visiting my website. As an accountant, my experience lies in reconciliations and P&L analysis, and I'm capable of data wrangling and visualization through SQL, Python and Tableau, while also skilled at coding in VBA to automate event processes. As a web developer, I focus on creating modern-look websites using HTML, CSS, JavaScript, jQuery, Bootstrap and Materialize. Outside of work, I love Zumba! I was an aerobic dancing instructor for three years. I also love watching stand-up comedy in my free time. Sometimes I try to throw some jokes into conversations with friends. Most times, they fall flat - but hey, I try. </p>
+      
+              </div>
             </div>
-            <!-- <div class="card-image" id="myImage">
-                <img src="https://cdn.glitch.com/2e860639-24bb-4041-8055-aed7de1c1244%2FmyPhoto.jpg?v=1581870005788">
-              </div> -->
           </div>
         </div>
-      </div>
-
-
 
     <!-- EXPERIENCE -->
 		<h3 id="experience">Experience</h3><br>
