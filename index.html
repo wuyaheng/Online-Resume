@@ -184,6 +184,16 @@
   opacity: 1;
 }
 
+#table p {
+  display: none;
+}
+
+#table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
 </style>
   
 </head>
@@ -218,9 +228,10 @@
                       <div class="col-md-12">
                           <!-- banner text -->
                           <div class="banner-text">
+                            <div id="table">
                               <h3>Hi, I'm Phoebe</h3>
-                              <p>Accountant <span>&amp;</span> Programmer</p>
-
+                              <p>Accountant | Front-end web developer</p>
+                            </div>
 
 
                           <!-- Download Resume Starts -->
@@ -286,6 +297,42 @@
   $(document).ready(function(){
       $('.sidenav').sidenav();
   })
+
+
+  function typeEffect(element, speed) {
+	var text = element.innerHTML;
+	element.innerHTML = "";
+	
+	var i = 0;
+	var timer = setInterval(function() {
+    if (i < text.length) {
+      element.append(text.charAt(i));
+      i++;
+    } else {
+      clearInterval(timer);
+    }
+  }, speed);
+}
+
+
+// application
+var speed = 75;
+var h3 = document.querySelector('#table h3');
+var p = document.querySelector('#table p');
+var delay = h3.innerHTML.length * speed + speed;
+
+// type affect to header
+typeEffect(h3, speed);
+
+
+// type affect to body
+setTimeout(function(){
+  p.style.display = "inline-block";
+  typeEffect(p, speed);
+}, delay);
+
+
+
 </script>
 
 </body>
