@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Phoebe Yaheng Wu</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+    body {
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: rgba(198,206,201,0.5);
+        font-size: 16px;
+    }
+    
+    
+    
+    #logo {
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5em;
+    }
+
+    .myNav a:hover{
+        color: #ffb74d;
+    }
+
+
+    a:hover {
+      text-decoration: none;
+      outline: none;
+      color: #ffb74d;
+    }
+
+
+
+    .footer {
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 64px;
+        background-color: #000000;
+        color: white;
+        text-align: center;
+        box-shadow: 0 -2px 2px 0 rgba(0,0,0,0.14), 0 -3px 1px -2px rgba(0,0,0,0.12), 0 -1px 5px 0 rgba(0,0,0,0.2);
+    }
+
+  .footer p {
+        margin-bottom: 0;
+    }
+
+   
+
+
+
+.blog-card {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2),
+              -1px -1px 10px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: 2vh;
+}
+
+.header {
+  background-color: #ffb74d;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.category {
+  margin: 0;
+  padding: 1vw;
+  color: #fff;
+  font-size: 1em;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  text-transform: uppercase;
+}
+
+.picture-wrapper {
+  height: 30vh;
+  width: 100%;
+  background-image: url('https://cdn.glitch.com/27911338-ce21-4c5e-8227-daa298f2e3ec%2Fimg-NewYork.jfif?v=1585716850001');
+  background-size: cover;
+}
+
+.text-wrapper {
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.25em;
+  padding: 6vh 4vh 2vh 4vh;
+}
+
+.author {
+  font-size: 0.75em;
+  padding-left: 4vh;
+  font-style: italic;
+}
+
+.text {
+  font-size: 1em;
+  padding: 4vh 4vh;
+}
+
+.hover {
+  font-size: 1.5625em;
+}
+
+.blog {
+    text-decoration: none;
+    color: #212529;
+}
+@media screen and (min-width: 700px) {
+  .blog-card {
+    width: 600px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+    
+  .picture-wrapper {
+    height: auto;
+    width: 60%;
+    border-bottom-left-radius: 10px;
+  }
+
+  .title {
+    padding-right: 10vh;
+  }
+}
+
+
+    
+    </style>
+ 
+</head>
+<body>
+<div class="navbar-fixed">
+<nav class="nav-wrapper #000000 black">
+    <div class="container">
+        <a href="#" class="brand-logo" id="logo">Phoebe Yaheng Wu</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li class="myNav"><a href="index.html">Home</a></li>
+            <li class="myNav"><a href="portfolio.html">Portfolio</a></li>
+            <li class="myNav"><a href="resume.html">Resume</a></li> 
+            <li class="myNav"><a href="blog.html">Blog</a></li> 
+        </ul>
+    </div>
+</nav>
+</div> 
+
+<ul class="sidenav" id="mobile-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="resume.html">Resume</a></li> 
+    <li><a href="blog.html">Blog</a></li> 
+  
+</ul>
+
+
+  
+    <div class="container-fluid mt-4 mb-5 pb-4">
+        <div class="row">
+        <div class="blog-card">
+            <div class="header">
+              <h2 class="category">Data Visualization</h2>
+            </div>
+          
+            <div class="content">
+              <div class="picture-wrapper"></div>
+                  
+              <div class="text-wrapper">  
+                <h1 class="title"><a href="https://phoebeyahengwu.github.io/Charts-Charts-Charts-about-NYC/" class="blog" target="_blank">New York City Population by Borough, 1950 - 2020</a></h1>
+                <h3 class="author">By Phoebe Yaheng Wu</h3>
+                <p class="text">
+                  <a href="https://phoebeyahengwu.github.io/Charts-Charts-Charts-about-NYC/" class="blog" target="_blank">Today, New York is the most populous U.S. city 
+                    and many people are attracted to...</a> 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy 2020 Phoebe Yaheng Wu</p>
+      </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    })
+
+    $(function(){
+    $('.blog-card').hover(
+        function(){
+            $('.title').addClass('hover');
+        },
+        function(){
+            $('.title').removeClass('hover');
+        }
+    );
+});
+
+
+</script>
+</body>
+</html>
