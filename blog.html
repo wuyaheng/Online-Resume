@@ -10,142 +10,215 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Phoebe Yaheng Wu</title>
 
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
-    @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
-    body {
-        /* display: flex; */
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background-color: rgba(198,206,201,0.5);
-        font-size: 16px;
-    }
-    
-    
-    
-    #logo {
-        font-family: 'Dancing Script', cursive;
-        font-size: 1.5em;
-    }
-
-    .myNav a:hover{
-        color: #ffb74d;
-    }
-
-
-    a:hover {
-      text-decoration: none;
-      outline: none;
-      color: #ffb74d;
-    }
-
-
-
-    .footer {
-        z-index: 5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 64px;
-        background-color: #000000;
-        color: white;
-        text-align: center;
-        box-shadow: 0 -2px 2px 0 rgba(0,0,0,0.14), 0 -3px 1px -2px rgba(0,0,0,0.12), 0 -1px 5px 0 rgba(0,0,0,0.2);
-    }
-
-  .footer p {
-        margin-bottom: 0;
-    }
-
+<style>
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
    
-
-
-
-.blog-card {
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2),
-              -1px -1px 10px 0 rgba(0, 0, 0, 0.2);
-  width: 300px;
-  margin: 2vh;
-}
-
-.header {
-  background-color: #ffb74d;
-  text-align: center;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.category {
+* {
   margin: 0;
-  padding: 1vw;
-  color: #fff;
-  font-size: 1em;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  text-transform: uppercase;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.picture-wrapper {
-  height: 30vh;
+:root {
+  --gradient-color: linear-gradient(
+    90deg,
+    rgb(255, 88, 88, 0.8),
+    rgb(240, 152, 25, 0.8)
+  );
+}
+body {
   width: 100%;
-  background-image: url('https://cdn.glitch.com/27911338-ce21-4c5e-8227-daa298f2e3ec%2Fimg-NewYork.jfif?v=1585716850001');
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(198,206,201,0.5);
+  font-size: 16px;
+}
+     
+#logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+}
+
+.myNav a:hover{
+    color: #ffb74d;
+}
+
+
+a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #ffb74d;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0.8rem 1rem rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+
+.card-image {
+  height: 25rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.background-image-first {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("https://cdn.glitch.com/27911338-ce21-4c5e-8227-daa298f2e3ec%2Fback-img8.jpeg?v=1586351178768")
+    center no-repeat;
   background-size: cover;
+  z-index: -1;
+  transition: transform 5s;
 }
 
-.text-wrapper {
-  font-family: sans-serif;
+.background-image-second {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("https://cdn.glitch.com/27911338-ce21-4c5e-8227-daa298f2e3ec%2Fback-img6.jpeg?v=1586351531978")
+    center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  transition: transform 5s;
 }
 
-.title {
-  font-size: 1.25em;
-  padding: 6vh 4vh 2vh 4vh;
+.card:hover .background-image {
+  transform: scale(1.2);
+}
+.publication-details {
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-color);
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.publication-details i {
+  margin-right: 1rem;
 }
 
 .author {
-  font-size: 0.75em;
-  padding-left: 4vh;
-  font-style: italic;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  transition: all 0.5s 0.2s;
+}
+.author:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+.date {
+  display: block;
 }
 
-.text {
-  font-size: 1em;
-  padding: 4vh 4vh;
+.card-content {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  position: relative;
 }
 
-.hover {
-  font-size: 1.5625em;
+.title {
+  font-size: 1.8rem;
+  line-height: 1;
 }
 
-.blog {
-    text-decoration: none;
-    color: #212529;
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #a2a2a2;
+  text-decoration: none;
+  margin: 1rem 0 1.5rem 0;
 }
-@media screen and (min-width: 700px) {
-  .blog-card {
-    width: 600px;
-  }
 
-  .content {
-    display: flex;
+.description {
+  position: relative;
+  line-height: 1.5;
+}
+
+.cta {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.cta a {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.cta a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 100%;
+  height: 3px;
+  background: var(--gradient-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.cta a:hover::before {
+  transform: scaleX(1);
+}
+
+@media screen and (min-width: 600px) {
+  .card {
     flex-direction: row;
+    max-width: 75rem;
   }
-    
-  .picture-wrapper {
+  .card-image {
     height: auto;
-    width: 60%;
-    border-bottom-left-radius: 10px;
+    flex-basis: 40%;
   }
-
-  .title {
-    padding-right: 10vh;
+  .card-content {
+    flex-basis: 60%;
+  }
+  .publication-details {
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+  }
+  .card:hover .publication-details {
+    transform: translateX(0);
+  }
+  .author {
+    transform: translateY(-3rem);
+    opacity: 0;
+    transition-delay: 0.2s;
+  }
+  .date {
+    transform: translateY(3rem);
+    opacity: 0;
+    transition: all 0.5s 0.2s;
+  }
+  .card:hover .author,
+  .card:hover .date {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
+
 
 
     
@@ -182,30 +255,58 @@
   
     <div class="container-fluid mt-4 mb-5 pb-4">
         <div class="row justify-content-center">
-        <div class="blog-card">
-            <div class="header">
-              <h2 class="category">Data Visualization</h2>
+          <div class="card">
+            <div class="card-image">
+              <div class="background-image-first"></div>
+              <div class="publication-details">
+                <a href="#" class="author">
+                  <i class="fab fa-js-square"></i>
+                  Data Visualization with Chart.js</a>
+                <span class="date"><i class="fas fa-calendar-alt"></i> March 31, 2020</span>
+              </div>
             </div>
-          
-            <div class="content">
-              <div class="picture-wrapper"></div>
-                  
-              <div class="text-wrapper">  
-                <h1 class="title"><a href="https://phoebeyahengwu.github.io/Charts-Charts-Charts-about-NYC/" class="blog" target="_blank">New York City Population by Borough, 1950 - 2020</a></h1>
-                <h3 class="author">By Phoebe Yaheng Wu</h3>
-                <p class="text">
-                  <a href="https://phoebeyahengwu.github.io/Charts-Charts-Charts-about-NYC/" class="blog" target="_blank">Today, New York is the most populous U.S. city 
-                    and many people are attracted to...</a> 
-                </p>
+      
+            <div class="card-content">
+              <h1 class="title">New York City Population by Borough, 1950 - 2020</h1>
+              <h2 class="subtitle">By Phoebe Yaheng Wu</h2>
+              <p class="description">
+                Today, New York is the most populous U.S. city and many people are attracted to live in the city for its prosperity, energy and diversity. But can you believe there was a point in the city's history when a million people fled New York...
+              </p>
+              <div class="cta">
+                <a href="https://phoebeyahengwu.github.io/Charts-Charts-Charts-about-NYC/" target="_blank">Read more &rarr;</a>
               </div>
             </div>
           </div>
         </div>
+
+
+        <div class="row justify-content-center">
+          <div class="card">
+            <div class="card-image">
+              <div class="background-image-second"></div>
+              <div class="publication-details">
+                <a href="#" class="author">
+                  <i class="fab fa-js-square"></i>
+                  Data Visualization with CanvasJS</a>
+                <span class="date"><i class="fas fa-calendar-alt"></i> April 7, 2020</span>
+              </div>
+            </div>
+      
+            <div class="card-content">
+              <h1 class="title">Best Programming Languages to Learn in 2020</h1>
+              <h2 class="subtitle">By Phoebe Yaheng Wu</h2>
+              <p class="description">
+                Programming is one of the essential skills required by many well-paying jobs and it enables people to make a positive impact in many ways, either in their jobs, industry or society by helping with efficiency, accessibility and automation...
+              </p>
+              <div class="cta">
+                <a href="https://phoebeyahengwu.github.io/Blog-2/" target="_blank">Read more &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </div>
-    
-    <div class="footer">
-        <p>&copy 2020 Phoebe Yaheng Wu</p>
-      </div>
+
 
 
 
@@ -218,16 +319,6 @@
         $('.sidenav').sidenav();
     })
 
-    $(function(){
-    $('.blog-card').hover(
-        function(){
-            $('.title').addClass('hover');
-        },
-        function(){
-            $('.title').removeClass('hover');
-        }
-    );
-});
 
 
 </script>
