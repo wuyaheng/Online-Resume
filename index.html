@@ -13,7 +13,13 @@
 
     <style>
     @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
-
+:root {
+  --gradient-color: linear-gradient(
+    90deg,
+    rgb(255, 183, 77, 0.8),
+    rgb(255, 88, 88, 0.8)
+  );
+}
     body {
       margin: 0;
       padding: 0;
@@ -162,6 +168,10 @@
     border-radius: 40px;
 }
 
+#resume {
+  background: var(--gradient-color);
+}
+
 
 #table p {
   display: none;
@@ -224,7 +234,7 @@
 
                           <!-- Download Resume Starts -->
 
-                            <button type="button" id="resume" class="white-text btn waves-effect waves-light #ffb74d orange lighten-2"><a href="https://cdn.glitch.com/2e860639-24bb-4041-8055-aed7de1c1244%2FPhoebe%20(Yaheng)%20Wu%20Resume.pdf?v=1581874264348" target="_blank" download class="white-text">View My Resume</a></button> 
+                            <button type="button" id="resume" class="white-text btn waves-effect waves-light"><a href="https://cdn.glitch.com/2e860639-24bb-4041-8055-aed7de1c1244%2FPhoebe%20(Yaheng)%20Wu%20Resume.pdf?v=1581874264348" target="_blank" download class="white-text">View My Resume</a></button> 
                             <!-- Download Resume Ends -->
                       </div>
                   </div>
