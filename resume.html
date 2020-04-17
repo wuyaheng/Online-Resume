@@ -307,10 +307,25 @@ body {
 	position: absolute;
 	left: 0;
 	top: -1px;
-	width: var(--pgbar-length);
+	/* width: var(--pgbar-length); */
 	height: 4px;
-	background: var(--skill-gradient-color);
+  background: var(--skill-gradient-color);
+  animation: increase 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function:ease-in;
 }
+
+@keyframes increase {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--pgbar-length);
+  }
+}
+
+
+
 
 
 @keyframes circle {
