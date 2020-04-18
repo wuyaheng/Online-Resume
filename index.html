@@ -23,8 +23,22 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: linear-gradient(to right, rgb(255, 88, 88, 0.8), rgb(255, 183, 77, 0.8));
+      background-size: 400% 400%;
+      animation: gradient 5s ease infinite;
+      background-image: linear-gradient(to right,rgb(255, 88, 88, 0.8), rgb(255, 183, 77, 0.8), rgba(198,206,201,0.5));
     }
+
+    @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
     #logo {
         font-family: 'Dancing Script', cursive;
