@@ -45,6 +45,12 @@ html {
   overflow-y: scroll; 
 }
 
+#landing-section {
+  height: calc(100vh - 64px - 64px);
+  height: -o-calc(100vh - 64px - 64px); 
+  height: -webkit-calc(100vh - 64px - 64px); 
+  height: -moz-calc(100vh - 64px - 64px); 
+}
 
 .nav-wrapper {
   background-color: #f6f6f6;
@@ -191,11 +197,18 @@ nav ul a {
 
 @media only screen and (max-width: 768px) {
   #table {
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
   .banner-text {
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
+
+  #landing-section {
+    height: calc(100vh - 64px - 56px);
+    height: -o-calc(100vh - 64px - 56px); 
+    height: -webkit-calc(100vh - 64px - 56px); 
+    height: -moz-calc(100vh - 64px - 56px); 
+  }
 }
 
 
@@ -228,7 +241,7 @@ nav ul a {
 
 
   
-              <div class="container-fluid">
+              <div class="container-fluid" id="landing-section">
                 
                   <div class="row">
                     <div class="col-md-6 profile">
