@@ -191,19 +191,27 @@ nav ul a {
 }
 
 .hello {
+  -webkit-animation: fadein 2s ease-in; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s ease-in; /* Firefox < 16 */
+        -ms-animation: fadein 2s ease-in; /* Internet Explorer */
+         -o-animation: fadein 2s ease-in; /* Opera < 12.1 */
+            animation: fadein 2s ease-in;
+}
+
+#resume {
+  -webkit-animation: fadein 4s ease-in; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s ease-in; /* Firefox < 16 */
+        -ms-animation: fadein 4s ease-in; /* Internet Explorer */
+         -o-animation: fadein 4s ease-in; /* Opera < 12.1 */
+            animation: fadein 4s ease-in; 
+}
+
+#girl {
   -webkit-animation: fadein 1s ease-in; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s ease-in; /* Firefox < 16 */
         -ms-animation: fadein 1s ease-in; /* Internet Explorer */
          -o-animation: fadein 1s ease-in; /* Opera < 12.1 */
-            animation: fadein 1s ease-in;
-}
-
-#resume {
-  -webkit-animation: fadein 3s ease-in; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s ease-in; /* Firefox < 16 */
-        -ms-animation: fadein 3s ease-in; /* Internet Explorer */
-         -o-animation: fadein 3s ease-in; /* Opera < 12.1 */
-            animation: fadein 3s ease-in; 
+            animation: fadein 1s ease-in; 
 }
 
 @keyframes fadein {
@@ -308,7 +316,7 @@ nav ul a {
                 
                   <div class="row">
                     <div class="col-md-6 profile">
-                      <img width=80% src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Fimage.png?v=1609694019316" alt="girl-image">
+                      <img id="girl" width=80% src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Fimage.png?v=1609694019316" alt="girl-image">
                     </div>
 
                       <div class="col-md-6 mb-5"> 
