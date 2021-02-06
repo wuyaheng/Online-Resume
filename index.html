@@ -253,6 +253,48 @@ nav ul a {
     to   { opacity: 1; }
 }
 
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    /* animation-delay: 1s; */
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
 @media only screen and (max-width: 768px) {
   #table {
     margin-top: 0rem;
@@ -334,7 +376,7 @@ nav ul a {
                   
                           <div class="banner-text">
                             <div id="table">
-                              <h3 class="hello" style="font-weight: 600;">Hello, World!</h3>
+                              <h3 class="hello animated animatedFadeInUp fadeInUp" style="font-weight: 600;">Hello, World!</h3>
                             </div>
                             <p class="paragraph-landing">I’m Phoebe, an accountant based in New York. When I am not working on debits and credits, I love to create interactive visualizations using publicly available data. I am an easygoing and friendly person. In my free time, I enjoy Zumba and watching stand-up comedy. Sometimes, I try to throw some jokes into conversations with friends. Most times, they fall flat—but, hey, I try.</p>
 
@@ -381,30 +423,30 @@ nav ul a {
   })
 
 
-  function typeEffect(element, speed) {
-	var text = element.innerHTML;
-	element.innerHTML = "";
+//   function typeEffect(element, speed) {
+// 	var text = element.innerHTML;
+// 	element.innerHTML = "";
 	
-	var i = 0;
-	var timer = setInterval(function() {
-    if (i < text.length) {
-      element.append(text.charAt(i));
-      i++;
-    } else {
-      clearInterval(timer);
-    }
-  }, speed);
-}
+// 	var i = 0;
+// 	var timer = setInterval(function() {
+//     if (i < text.length) {
+//       element.append(text.charAt(i));
+//       i++;
+//     } else {
+//       clearInterval(timer);
+//     }
+//   }, speed);
+// }
 
 
 // application
-var speed = 85;
-var h3 = document.querySelector('#table h3');
+// var speed = 85;
+// var h3 = document.querySelector('#table h3');
 // var p = document.querySelector('#table p');
-var delay = h3.innerHTML.length * speed + speed;
+// var delay = h3.innerHTML.length * speed + speed;
 
 // type affect to header
-typeEffect(h3, speed);
+// typeEffect(h3, speed);
 
 
 // type affect to body
