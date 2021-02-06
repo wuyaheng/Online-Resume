@@ -185,11 +185,23 @@ nav ul a {
     line-height: 1.6 !important;
     color: #212529 !important;
     animation-delay: 0.7s;
-    animation-timing-function: ease-in;
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    -ms-animation-delay: 0.7s; 
+    -o-animation-delay: 0.7s;
+    animation-timing-function: ease-in; 
+}
+
+.hello {
+  animation-timing-function: ease-in; 
 }
 
 #resume {
   animation-delay: 1.6s;
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+    -ms-animation-delay: 1.6s; 
+    -o-animation-delay: 1.6s;
   animation-timing-function: ease-in;
 }
 
@@ -352,6 +364,27 @@ nav ul a {
   .banner-text {
     padding-right: 0rem !important;
 }
+#girl {
+  -webkit-animation: fadeInUp 0.5s ease-in; 
+       -moz-animation: fadeInUp 0.5s ease-in;
+        -ms-animation: fadeInUp 0.5s ease-in; 
+         -o-animation: fadeInUp 0.5s ease-in; 
+            animation: fadeInUp 0.5s ease-in;  
+} 
+.hello {
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+    -ms-animation-delay: 0.4s; 
+    -o-animation-delay: 0.4s;
+}
+.paragraph-landing {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s; 
+    -o-animation-delay: 1s;  
+}
 
 }
 @media (max-width: 500px) {
@@ -394,7 +427,7 @@ nav ul a {
   
               <div class="container-fluid" id="landing-section">
                 
-                  <div class="row">
+                  <div class="row m-0 p-0">
                     <div class="col-md-6 profile">
                       <img id="girl" width=80% src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Fimage.png?v=1609694019316" alt="girl-image">
                     </div>
@@ -403,31 +436,15 @@ nav ul a {
                   
                           <div class="banner-text">
                             <div id="table">
-                              <h3 class="hello animated animatedFadeInUp fadeInUp" style="font-weight: 600;">Hello, World!</h3>
+                              <h3 class="hello animated animatedFadeInUp fadeInUp" style="font-weight: 600;">Hey there!</h3>
                             </div>
                             <p class="paragraph-landing animated animatedFadeInUp fadeInUp">I’m Phoebe, an accountant based in New York. When I am not working on debits and credits, I love to create interactive visualizations using publicly available data. I am an easygoing and friendly person. In my free time, I enjoy Zumba and watching stand-up comedy. Sometimes, I try to throw some jokes into conversations with friends. Most times, they fall flat—but, hey, I try.</p>
 
                             <button type="button" id="resume" class="white-text btn waves-effect waves-light mt-3 animated animatedFadeInUp fadeInUp"><a href="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2FResume.pdf?v=1609702107940" target="_blank" download class="white-text">View My Resume</a></button> 
                             <img id="littleGirl" class="right" width=28% src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Flogo_fv.png?v=1612031382492" alt="girl-image">
                       </div>
-                  </div>
-
-
-
+                  </div> 
               </div>
-
-              <!-- <div class="icon-bar">
-                
-                    <a href="https://www.linkedin.com/in/wuyaheng" target="_blank" id="linkedin" class="icon waves-effect waves-light" type="button" role="button">
-                      <i class="fab fa-linkedin-in"> </i>
-                    </a>
-              
-                
-                    <a href="https://github.com/wuyaheng" target="_blank" id="github" class="icon waves-effect waves-light" type="button" role="button">
-                      <i class="fab fa-github"></i>
-                    </a>
-          </div>   -->
-
         </div>
 
      
