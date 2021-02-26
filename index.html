@@ -148,13 +148,13 @@ nav ul a {
     margin-bottom: 0;
   }
 
-#resume:hover { 
+.resume:hover { 
     transform: translate(-6px, 2px);
     letter-spacing: 0.1em;
     border-radius: 40px;
 }
 
-#resume {
+.resume {
   background: var(--gradient-color);
 }
 
@@ -184,42 +184,8 @@ nav ul a {
     font-weight: 400 !important;
     line-height: 1.6 !important;
     color: #212529 !important;
-    animation-delay: 0.7s;
-    -webkit-animation-delay: 0.7s;
-    -moz-animation-delay: 0.7s;
-    -ms-animation-delay: 0.7s; 
-    -o-animation-delay: 0.7s;
-    animation-timing-function: ease-in; 
 }
 
-.hello {
-  animation-timing-function: ease-in; 
-}
-
-#resume {
-  animation-delay: 1.6s;
-  -webkit-animation-delay: 1.6s;
-  -moz-animation-delay: 1.6s;
-    -ms-animation-delay: 1.6s; 
-    -o-animation-delay: 1.6s;
-  animation-timing-function: ease-in;
-}
-
-#girl {
-  -webkit-animation: fadein 1s ease-in; 
-       -moz-animation: fadein 1s ease-in;
-        -ms-animation: fadein 1s ease-in; 
-         -o-animation: fadein 1s ease-in; 
-            animation: fadein 1s ease-in; 
-} 
-
-#littleGirl {
-    -webkit-animation: fadein 2s linear; 
-       -moz-animation: fadein 2s linear;
-        -ms-animation: fadein 2s linear; 
-         -o-animation: fadein 2s linear; 
-            animation: fadein 2s linear; 
-}  
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -307,32 +273,6 @@ nav ul a {
     }
 }
 
-.animated {
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -ms-animation-duration: 1s; 
-    -o-animation-duration: 1s; 
-    animation-fill-mode: both;
-   -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both; 
-    -o-animation-fill-mode: both; 
-}
-
-
-.animatedFadeInUp {
-    opacity: 0
-}
-
-.fadeInUp {
-    opacity: 0;
-    animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp;
-    -moz-animation-name: fadeInUp;
-        -ms-animation-name: fadeInUp; 
-         -o-animation-name: fadeInUp; 
-}
 
 
 .sidenav {
@@ -361,6 +301,7 @@ nav ul a {
   }
 }
 
+
 @media (max-width: 768px) {
 	#logo {
 		font-size: 90%;
@@ -375,27 +316,7 @@ nav ul a {
   .banner-text {
     padding-right: 0rem !important;
 }
-#girl {
-  -webkit-animation: fadeInUp 0.7s ease-in; 
-       -moz-animation: fadeInUp 0.7s ease-in;
-        -ms-animation: fadeInUp 0.7s ease-in; 
-         -o-animation: fadeInUp 0.7s ease-in; 
-            animation: fadeInUp 0.7s ease-in;  
-} 
-.hello {
-  animation-delay: 0.5s;
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
-    -ms-animation-delay: 0.5s; 
-    -o-animation-delay: 0.5s;
-}
-.paragraph-landing {
-    animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    -ms-animation-delay: 1s; 
-    -o-animation-delay: 1s;  
-}
+
 
 }
 @media (max-width: 500px) {
@@ -440,20 +361,20 @@ nav ul a {
                 
                   <div class="row m-0 p-0">
                     <div class="col-md-6 profile">
-                      <img id="girl" width=80% src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Fimage.png?v=1609694019316" alt="girl-image">
+                      <img id="intro-text" width=80% src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Fimage.png?v=1609694019316" alt="girl-image">
                     </div>
 
                       <div class="col-md-6 mb-5"> 
                   
                           <div class="banner-text">
                             <div id="table">
-                              <h3 class="hello animated animatedFadeInUp fadeInUp" style="font-weight: 600;">Hey there!</h3>
+                              <h3 id="intro-backg" class="hello" style="font-weight: 600;">Hey there!</h3>
                             </div>
-                            <p class="paragraph-landing animated animatedFadeInUp fadeInUp">I’m Phoebe, an accountant based in New York. When I am not working on debits and credits, I love to create interactive visualizations using publicly available data. I am an easygoing and friendly person. In my free time, I enjoy Zumba and watching stand-up comedy. Sometimes, I try to throw some jokes into conversations with friends. Most times, they fall flat—but, hey, I try.</p>
-
-                            <button type="button" id="resume" class="white-text btn waves-effect waves-light mt-3 animated animatedFadeInUp fadeInUp"><a href="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2FResume.pdf?v=1609702107940" target="_blank" download class="white-text">View My Resume</a></button> 
-                            <img id="littleGirl" class="right" width=28% src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Flogo_fv.png?v=1612031382492" alt="girl-image">
-                      </div>
+                            <p id="intro-backg2" class="paragraph-landing">I’m Phoebe, an accountant based in New York. When I am not working on debits and credits, I love to create interactive visualizations using publicly available data. I am an easygoing and friendly person. In my free time, I enjoy Zumba and watching stand-up comedy. Sometimes, I try to throw some jokes into conversations with friends. Most times, they fall flat—but, hey, I try.</p>
+                          
+                            <button id="intro-backg3" type="button" class="resume white-text btn waves-effect waves-light mt-3"><a href="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2FResume.pdf?v=1609702107940" target="_blank" download class="white-text">View My Resume</a></button> 
+                            <img id="intro-img" class="right" width=28% src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Flogo_fv.png?v=1612031382492" alt="girl-image">
+                          </div>
                   </div> 
               </div>
         </div>
@@ -471,46 +392,22 @@ nav ul a {
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
 <script>
+
   $(document).ready(function(){
       $('.sidenav').sidenav();
   })
 
 
-//   function typeEffect(element, speed) {
-// 	var text = element.innerHTML;
-// 	element.innerHTML = "";
-	
-// 	var i = 0;
-// 	var timer = setInterval(function() {
-//     if (i < text.length) {
-//       element.append(text.charAt(i));
-//       i++;
-//     } else {
-//       clearInterval(timer);
-//     }
-//   }, speed);
-// }
-
-
-// application
-// var speed = 85;
-// var h3 = document.querySelector('#table h3');
-// var p = document.querySelector('#table p');
-// var delay = h3.innerHTML.length * speed + speed;
-
-// type affect to header
-// typeEffect(h3, speed);
-
-
-// type affect to body
-// setTimeout(function(){
-//   p.style.display = "inline-block";
-//   typeEffect(p, speed);
-// }, delay);
-
-
+  window.addEventListener("DOMContentLoaded", function () {
+  var tl = gsap.timeline();
+  tl.from("#intro-text", { duration: 1, x: -1000, opacity: 0 });
+  tl.from("#intro-backg", { duration: 1, opacity: 0, delay: 1}, "-=0.5");
+  tl.from("#intro-backg2", { duration: 1, opacity: 0 }, "-=0.5");
+  tl.from("#intro-backg3", { duration: 1, opacity: 0 }, "-=0.5");
+  tl.from("#intro-img", { duration: 1, x: 1000, opacity: 0}, "-=0.5");
+});
 
 
 </script>
