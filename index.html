@@ -38,7 +38,6 @@
 body {
     margin: 0;
     padding: 0;
-    /* background-size: 400% 400%; */
     background-image: linear-gradient(to right,#f6f6f6, #f6f6f6);
     animation: gradient 4s ease forwards;
     }
@@ -74,51 +73,6 @@ nav ul a {
       color: #fff;
     }
 
-    .icon-bar {
-      position: fixed;
-      top: 32vh;
-      right: 0;
-    }
-
-    .icon-bar a {
-      display: block;
-      *display:block;
-      text-align: center;
-      text-align: -webkit-center;
-      padding: 15px;
-      transition: all 0.2s ease; 
-      color: #fff;
-      font-size: 17px;
-    }
-
-.icon-bar a:hover{
-      border-radius: 10px 0px 0px 10px;
-      font-size: 15px;
-    }
-
-.icon {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
-  -o-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
-  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
-  font-size: 17px; 
-  width: 50px;
-  height: 50px;
-  text-align: center;
-}
-
-
-
-    #github {
-      background: #333;
-      color: white;     
-    }
-
-
-    #linkedin {
-      background: #007bb5;
-      color: white;
-    }
 
     .banner-text h3 {
       font-weight: 400;
@@ -134,7 +88,6 @@ nav ul a {
    display: flex;
    justify-content: center;
    align-items: center;
-   /* position: fixed; */
    left: 0;
    bottom: 0;
    width: 100%;
@@ -185,94 +138,6 @@ nav ul a {
     line-height: 1.6 !important;
     color: #212529 !important;
 }
-
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-
-
-@keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
-
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
-
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
-}
-
-@-moz-keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
-
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
-}
-
-@-ms-keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
-
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
-}
-
-@-o-keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
-
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
-}
-
 
 
 .sidenav {
@@ -403,10 +268,10 @@ nav ul a {
   window.addEventListener("DOMContentLoaded", function () {
   var tl = gsap.timeline();
   tl.from("#intro-text", { duration: 1, x: -1000, opacity: 0 });
-  tl.from("#intro-backg", { duration: 1, opacity: 0, delay: 1}, "-=0.5");
-  tl.from("#intro-backg2", { duration: 1, opacity: 0 }, "-=0.5");
-  tl.from("#intro-backg3", { duration: 1, opacity: 0 }, "-=0.5");
-  tl.from("#intro-img", { duration: 1, x: 1000, opacity: 0}, "-=0.5");
+  tl.from("#intro-backg", { duration: 1, opacity: 0, delay: 1});
+  tl.from("#intro-backg2", { duration: 1, opacity: 0 });
+  tl.from("#intro-backg3", { duration: 1, opacity: 0 });
+  tl.from("#intro-img", { duration: 1, x: 1000, opacity: 0});
 });
 
 
