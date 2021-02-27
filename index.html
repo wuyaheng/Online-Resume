@@ -82,7 +82,7 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
   .intro-text {
-  padding: 1rem;
+  padding: 0rem;
 }
 
 .intro-img {
@@ -98,7 +98,12 @@ a:hover {
 }
   .about-img {
   padding: 0rem 0rem 0rem 0rem !important;
+  display: none !important;
 }
+
+  .project_card {
+    height: 320px !important;
+  }
 
 }
 
@@ -193,7 +198,7 @@ h3 {
 }
 
 .card {
-    height: 420px;
+    /* height: 420px; */
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 40px 40px -20px #fff;
@@ -521,7 +526,7 @@ h3 {
 
               <section class="row m-0 p-0">
               <div class="col-md-4">
-                <div class="card hoverable">
+                <div class="card hoverable project_card">
                   <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Fvolunteer.jpeg?v=1611516485538"/>
                   </div>
@@ -547,7 +552,7 @@ h3 {
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card hoverable">
+                <div class="card hoverable project_card">
                   <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="https://cdn.glitch.com/79b975e7-f2dd-49c9-bdbc-ead9636766ae%2Fpexels-photo-4386367.jpeg?v=1606591047793"/>
                   </div>
@@ -572,14 +577,14 @@ h3 {
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card hoverable">
+                <div class="card hoverable project_card">
                   <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="https://cdn.glitch.com/79b975e7-f2dd-49c9-bdbc-ead9636766ae%2Fpexels-photo-977962.jpeg?v=1609554104400"/>
                   </div>
                   <div class="card-content">
        
                     <span class="card-title activator grey-text text-darken-4">
-                      Citi Bike Availability Map
+                      Citi Bike Availability
                       <i class="material-icons right">more_vert</i>
                     </span>
                     <p>Find Citi Bikes Real-Time Availability</p>
