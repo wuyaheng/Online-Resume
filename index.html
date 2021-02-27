@@ -75,7 +75,7 @@ a:hover {
 }
 
 .about-text {
-  padding: 6rem 4rem 0rem 1rem;
+  padding: 8rem 4rem 0rem 1rem;
   line-height: 2rem;
   font-size: 1.2rem;
   text-align: justify;
@@ -513,12 +513,12 @@ font-weight: 600;
                   <div class="row h-100 m-0 p-0">
                     <div class="col-md-7">
                       <div class="intro-text">
-                        <h1>Howdy<span>,</span></h1>
+                        <h1 id="howdy">Howdy<span>,</span></h1>
                         <p id="subheading">I'm <span>Phoebe</span></p>
                       </div>             
                     </div>
                       <div class="col-md-5"> 
-                        <div class="intro-img">
+                        <div class="intro-img" id="intro-girl">
                         <img width=100% src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Flogo_fv.png?v=1612031382492" alt="girl-image">
                       </div>
                     </div> 
@@ -719,14 +719,12 @@ font-weight: 600;
   })
 
 
-//   window.addEventListener("DOMContentLoaded", function () {
-//   var tl = gsap.timeline();
-//   tl.from("#intro-text", { duration: 1.5, opacity: 0 });
-//   tl.from("#intro-backg", { duration: 1, opacity: 0 });
-//   tl.from("#intro-backg2", { duration: 1, opacity: 0 });
-//   tl.from("#intro-backg3", { duration: 1, opacity: 0 });
-//   tl.from("#intro-img", { duration: 1, opacity: 0});
-// });
+  window.addEventListener("DOMContentLoaded", function () {
+  var tl = gsap.timeline();
+  tl.from("#howdy", { duration: 1, x:-300, opacity: 0 });
+  tl.from("#subheading", { duration: 1, x:400, opacity: 0 });
+  tl.from("#intro-girl", { duration: 1, opacity: 0 });
+});
 
 
 </script>
