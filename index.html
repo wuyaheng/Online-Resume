@@ -220,6 +220,231 @@ h1 {
   padding: 6rem;
 }
 
+.card {
+    height: 470px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 40px 40px -20px #fff;
+    overflow: hidden;
+}
+
+.card .card-top {
+    height: 236px;
+    font-family: 'neuzeit-grotesk', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #303336;
+    background-color: #d1e8ee;
+    overflow: hidden;
+}
+
+.card .card-top a {
+    display: block;  
+    height: 100%;  
+}
+
+.card .card-top a img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    object-position: center; 
+    transition: 300ms;
+}
+
+.card .card-content {
+    padding: 30px;
+}
+
+.card .card-content .tag {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.card .tag-nature {
+    color: #339b4b;
+}
+
+
+.card .title {
+    color: #303336;
+    font-weight: 700;
+    transition: 300ms;
+}
+
+.card p {
+    color: #7B8591;
+    margin-top: 20px;
+}
+
+
+.card .card-top a img:hover {
+    opacity: .75;
+}
+
+.card .title:hover {
+    color: #303336bb;
+}
+
+
+.btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+
+.icon-button {
+	background-color: white;
+	border-radius: 20px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.3rem;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 2.6rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 2.6rem;
+	height: 2.6rem;
+	border-radius: 20px;
+	margin: -1.3rem;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 2.6rem;
+	left: 0;
+	line-height: 2.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 2.6rem;
+	z-index: 10;
+}
+
+
+/*
+
+Twitter blue:  #63CCEE;
+Facebook blue:  #507ABD;
+Google+: #EB6B52;
+LinkedIn: #1086C8;
+Pinterest #F05F5C;
+
+*/
+
+
+.twitter {
+	background-color: rgba(64,153,255,.7);
+}
+.facebook  {
+	background-color: rgba(80,122,189,.7);
+}
+.google-plus {
+	background-color: rgba(219,90,60,.7);
+}
+.linkedin {
+	background-color: rgba(16,134,200,.7);
+}
+.pinterest {
+	background-color: rgba(203,32,39,.7);
+}
+
+
+/*HOVER*/
+
+.twitter span{
+	background-color: rgba(64,153,255,.7);
+}
+.facebook span {
+	background-color: rgba(80,122,189,.7);
+}
+.google-plus span {
+	background-color: rgba(219,90,60,.7); 
+}
+.linkedin span {
+	background-color: rgba(16,134,200,.7);
+}
+.pinterest span {
+	background-color: rgba(203,32,39,.7);
+}
+
+
+
+
+
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus,
+.icon-button:hover .fa-tumblr,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-pinterest {
+	color: white;
+}
+
+@media all and (max-width: 680px) {
+  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  /* Icons */
+  .icon-button i {
+	  height: 1.6rem;
+	  line-height: 1.6rem;
+	  width: 1.6rem;
+  }
+  body {
+
+	  padding: 10px;
+  }
+  .pinterest {
+   display: none; 
+  }
+
+}
 
 </style>
   
@@ -280,8 +505,68 @@ h1 {
               </div>
             </div>
      
+            <div class="container-fluid mt-5 h-100">
+              <h2 class="text-center">Recent Projects</h2>
 
-     
+              <section class="row mb-1" >
+              <div class="col-md-4">
+                <div class="card">
+                    <div class="card-top">
+                        <a href=""><img src="https://cdn.glitch.com/defe57d3-a865-4cae-adb9-0714a14d5412%2Fnature.jpeg?v=1614026698658" alt="Unsplash Photo"></a>
+                    </div>
+                    <div class="card-content">
+                        <h6 class="tag tag-nature">NATURE</h6>
+                        <a href=""><h3 class="title">Blog Title</h3></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-top">
+                      <a href=""><img src="https://cdn.glitch.com/defe57d3-a865-4cae-adb9-0714a14d5412%2Fmark.jpg?v=1614026829115" alt="Pexel Photo"></a>
+                  </div>
+                  <div class="card-content">
+                      <h6 class="tag tag-nature">MARKETING</h6>
+                      <a href=""><h3 class="title">Blog Title</h3></a>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+              </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-top">
+                      <a href=""><img src="https://cdn.glitch.com/defe57d3-a865-4cae-adb9-0714a14d5412%2Fmusic.jpeg?v=1614026494284" alt="Pexel Photo"></a>
+                  </div>
+                  <div class="card-content">
+                      <h6 class="tag tag-nature">MUSIC</h6>
+                      <a href=""><h3 class="title">Blog Title</h3></a>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+              </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="row justify-content-center mb-5">
+            <a class="btn fill text-center" href="#">READ MORE</a>
+          </div>
+
+          <h2 class="text-center">Contact Me</h2>
+          
+
+        
+          <div class="row justify-content-center pb-5">
+          <a href="#" class="icon-button twitter"><i class="fa fa-twitter"></i>
+          <span></span></a>
+          <a href="#" class="icon-button facebook"><i class="fa fa-facebook"></i>
+          <span></span></a>
+          <a href="#" class="icon-button google-plus"><i class="fa fa-google"></i>
+          <span></span></a>
+          <a href="#" class="icon-button linkedin"><i class="fa fa-linkedin"></i><span></span></a>
+          <a href="#" class="icon-button pinterest"><i class="fa fa-pinterest"></i><span></span></a>
+          </div>
+       
    
         <div class="fixed-bottom footer">
           <p>&copy 2021 Phoebe Yaheng Wu</p>
