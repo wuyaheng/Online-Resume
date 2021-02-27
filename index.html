@@ -28,6 +28,7 @@
 
     <style>
     @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
   --gradient-color: linear-gradient(
     90deg,
@@ -44,6 +45,7 @@ body {
 
 html {
   overflow-y: scroll; 
+  overflow-x: hidden;
 }
 
 #landing-section {
@@ -133,10 +135,12 @@ a:hover {
 
 .paragraph-landing {
 	  text-align: justify;
-    font-size: 1rem !important;
-    font-weight: 400 !important;
-    line-height: 1.6 !important;
-    color: #212529 !important;
+    font-size: 1.2rem !important;
+    line-height: 1.5;
+    font-family: Poppins;
+    color: #011640;
+    margin-top: 8rem;
+    padding: 6rem;
 }
 
 
@@ -193,6 +197,30 @@ a:hover {
 }
 } 
 
+
+h1 {
+  font-size: 7rem;
+  font-weight: 600;
+  margin: 6rem 0 2rem 0;
+  font-family: Poppins;
+}
+
+#subheading {
+  font-size: 5rem;
+  font-weight: 600;
+  margin: 2rem 0;
+  font-family: Poppins;
+}
+
+#subheading span {
+  color: #F2957E;
+}
+
+.intro-container {
+  padding: 6rem;
+}
+
+
 </style>
   
 </head>
@@ -224,24 +252,34 @@ a:hover {
   
               <div class="container-fluid" id="landing-section">
                 
-                  <div class="row m-0 p-0">
+                  <div class="row mt-1 h-100">
                     <div class="col-md-6">
-                      <img id="intro-text" width=80% src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Fimage.png?v=1609694019316" alt="girl-image">
+                  
+                      <div class="intro-container">
+                        <h1>Howdy<span>,</span></h1>
+                        <p id="subheading">I'm <span>Phoebe</span></p>
+                      </div>           
+                     
                     </div>
 
                       <div class="col-md-6"> 
-                          <div class="banner-text">
-                            <div id="table">
-                              <h3 id="intro-backg" class="hello" style="font-weight: 600;">Hey there!</h3>
-                            </div>
-                            <p id="intro-backg2" class="paragraph-landing">I’m Phoebe, an accountant based in New York. When I am not working on debits and credits, I love to create interactive visualizations using publicly available data. I am an easygoing and friendly person. In my free time, I enjoy Zumba and watching stand-up comedy. Sometimes, I try to throw some jokes into conversations with friends. Most times, they fall flat—but, hey, I try.</p>
-                          
-                            <button id="intro-backg3" type="button" class="resume white-text btn waves-effect waves-light mt-3"><a href="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2FResume.pdf?v=1609702107940" target="_blank" download class="white-text">View My Resume</a></button> 
-                            <img id="intro-img" class="right" width=28% src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Flogo_fv.png?v=1612031382492" alt="girl-image">
-                          </div>
+                        <img id="intro-img" class="right p-5 mr-5" width=70% src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Flogo_fv.png?v=1612031382492" alt="girl-image">
                   </div> 
               </div>
-        </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row p-0 m-0 h-100">
+                <div class="col-md-5">
+                  <img id="intro-text" class="p-5" width=100% src="https://cdn.glitch.com/c0dcb651-5b19-4756-a6e6-25b3982ca367%2Fgirl.png?v=1614393658226" alt="girl-image">
+                </div>
+                <div class="col-md-7">
+                  <p id="intro-backg2" class="paragraph-landing">I’m an accountant based in New York. When I am not working on debits and credits, I love to create interactive visualizations using publicly available data. I am an easygoing and friendly person. In my free time, I enjoy Zumba and watching stand-up comedy. Sometimes, I try to throw some jokes into conversations with friends. Most times, they fall flat—but, hey, I try.</p>
+                      
+                  <!-- <button id="intro-backg3" type="button" class="resume white-text btn waves-effect waves-light mt-3"><a href="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2FResume.pdf?v=1609702107940" target="_blank" download class="white-text">View My Resume</a></button>  -->
+                </div>
+              </div>
+            </div>
+     
 
      
    
@@ -264,14 +302,14 @@ a:hover {
   })
 
 
-  window.addEventListener("DOMContentLoaded", function () {
-  var tl = gsap.timeline();
-  tl.from("#intro-text", { duration: 1.5, opacity: 0 });
-  tl.from("#intro-backg", { duration: 1, opacity: 0 });
-  tl.from("#intro-backg2", { duration: 1, opacity: 0 });
-  tl.from("#intro-backg3", { duration: 1, opacity: 0 });
-  tl.from("#intro-img", { duration: 1, opacity: 0});
-});
+//   window.addEventListener("DOMContentLoaded", function () {
+//   var tl = gsap.timeline();
+//   tl.from("#intro-text", { duration: 1.5, opacity: 0 });
+//   tl.from("#intro-backg", { duration: 1, opacity: 0 });
+//   tl.from("#intro-backg2", { duration: 1, opacity: 0 });
+//   tl.from("#intro-backg3", { duration: 1, opacity: 0 });
+//   tl.from("#intro-img", { duration: 1, opacity: 0});
+// });
 
 
 </script>
