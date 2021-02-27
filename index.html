@@ -236,7 +236,7 @@ a:hover {
                             </div>
                             <p id="intro-backg2" class="paragraph-landing">I’m Phoebe, an accountant based in New York. When I am not working on debits and credits, I love to create interactive visualizations using publicly available data. I am an easygoing and friendly person. In my free time, I enjoy Zumba and watching stand-up comedy. Sometimes, I try to throw some jokes into conversations with friends. Most times, they fall flat—but, hey, I try.</p>
                           
-                            <!-- <button id="intro-backg3" type="button" class="resume white-text btn waves-effect waves-light mt-3"><a href="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2FResume.pdf?v=1609702107940" target="_blank" download class="white-text">View My Resume</a></button>  -->
+                            <button id="intro-backg3" type="button" class="resume white-text btn waves-effect waves-light mt-3"><a href="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2FResume.pdf?v=1609702107940" target="_blank" download class="white-text">View My Resume</a></button> 
                             <img id="intro-img" class="right" width=28% src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Flogo_fv.png?v=1612031382492" alt="girl-image">
                           </div>
                   </div> 
@@ -266,10 +266,10 @@ a:hover {
 
   window.addEventListener("DOMContentLoaded", function () {
   var tl = gsap.timeline();
-  tl.from("#intro-text", { duration: 1, opacity: 0 });
+  tl.from("#intro-text", { duration: 1.5, opacity: 0 });
   tl.from("#intro-backg", { duration: 1, opacity: 0 });
   tl.from("#intro-backg2", { duration: 1, opacity: 0 });
-  // tl.from("#intro-backg3", { duration: 1, opacity: 0 });
+  tl.from("#intro-backg3", { duration: 1, opacity: 0 });
   tl.from("#intro-img", { duration: 1, opacity: 0});
 });
 
