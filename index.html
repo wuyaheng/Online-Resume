@@ -29,30 +29,13 @@
     <style>
     @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-:root {
-  --gradient-color: linear-gradient(
-    90deg,
-    rgb(255, 183, 77, 0.8),
-    rgb(255, 88, 88, 0.8)
-  );
-}
-body {
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(to right,#f6f6f6, #f6f6f6);
-    animation: gradient 4s ease forwards;
-    }
 
-html {
+html, body {
   overflow-y: scroll; 
   overflow-x: hidden;
-}
-
-#landing-section {
-  height: calc(100vh - 30px - 64px);
-  height: -o-calc(100vh - 30px - 64px); 
-  height: -webkit-calc(100vh - 30px - 64px); 
-  height: -moz-calc(100vh - 30px - 64px);  
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right,#f6f6f6, #f6f6f6);
 }
 
 .nav-wrapper {
@@ -75,16 +58,31 @@ a:hover {
       color: #fff;
   }
 
+.intro-text {
+  padding: 6rem;
+}
 
-.banner-text h3 {
-      font-weight: 400;
-      font-size: 30px;
-  }
+.intro-img {
+  padding: 2rem 2rem 0rem 5rem !important;
+}
 
-.banner-text p {
-      font-weight: 400;
-      font-size: 20px;
-  }
+
+@media only screen and (max-width: 768px) {
+  .intro-text {
+  padding: 1rem;
+}
+
+.intro-img {
+  padding: 0rem 0rem 0rem 6rem !important;
+}
+
+  h1, #subheading {
+  font-size: 3rem !important;
+}
+
+}
+
+
 
 .footer {
    display: flex;
@@ -103,46 +101,9 @@ a:hover {
     margin-bottom: 0;
   }
 
-.resume:hover { 
-    transform: translate(-6px, 2px);
-    letter-spacing: 0.1em;
-    border-radius: 40px;
-}
-
-.resume {
-  background: var(--gradient-color);
-}
-
-
-#table p {
-  display: none;
-}
-
-#table {
-	display: table;
-	width: 100%;
-	height: 100%;
-}
-
-.banner-text {
-  margin-top: 3rem;
-  padding-right: 4rem;
-}
-
 .myNav a:hover{
   color: #ffb74d;
 }
-
-.paragraph-landing {
-	  text-align: justify;
-    font-size: 1.2rem !important;
-    line-height: 1.5;
-    font-family: Poppins;
-    color: #011640;
-    margin-top: 8rem;
-    padding: 6rem;
-}
-
 
 .sidenav {
   position: fixed;
@@ -154,47 +115,17 @@ a:hover {
   padding-top: 1px;
 }
 
-@media only screen and (max-width: 768px) {
-  #table {
-    margin-top: 0rem;
-  }
-  .banner-text {
-  margin-top: 0rem;
-}
-
-  #landing-section {
-    height: calc(100vh - 30px - 56px);
-    height: -o-calc(100vh - 30px - 56px); 
-    height: -webkit-calc(100vh - 30px - 56px); 
-    height: -moz-calc(100vh - 30px - 56px); 
-  }
-}
 
 
 @media (max-width: 768px) {
 	#logo {
 		font-size: 90%;
 	}
-
-  .icon-bar {
-    display: none;
-  }
-  .hello {
-    text-align: center !important;
-  }
-  .banner-text {
-    padding-right: 0rem !important;
-}
-
-
 }
 @media (max-width: 500px) {
 	#logo {
 		font-size: 90%;
 	}
-  .banner-text {
-    padding-right: 0rem !important;
-}
 } 
 
 
@@ -216,9 +147,6 @@ h1 {
   color: #F2957E;
 }
 
-.intro-container {
-  padding: 6rem;
-}
 
 .card {
     height: 470px;
@@ -353,17 +281,6 @@ h1 {
 }
 
 
-/*
-
-Twitter blue:  #63CCEE;
-Facebook blue:  #507ABD;
-Google+: #EB6B52;
-LinkedIn: #1086C8;
-Pinterest #F05F5C;
-
-*/
-
-
 .twitter {
 	background-color: rgba(64,153,255,.7);
 }
@@ -381,8 +298,6 @@ Pinterest #F05F5C;
 }
 
 
-/*HOVER*/
-
 .twitter span{
 	background-color: rgba(64,153,255,.7);
 }
@@ -398,10 +313,6 @@ Pinterest #F05F5C;
 .pinterest span {
 	background-color: rgba(203,32,39,.7);
 }
-
-
-
-
 
 
 .icon-button:hover .icon-twitter,
@@ -430,21 +341,18 @@ Pinterest #F05F5C;
     margin: -0.8rem;
   }
 
-  /* Icons */
   .icon-button i {
 	  height: 1.6rem;
 	  line-height: 1.6rem;
 	  width: 1.6rem;
-  }
-  body {
-
-	  padding: 10px;
   }
   .pinterest {
    display: none; 
   }
 
 }
+
+
 
 </style>
   
@@ -475,24 +383,22 @@ Pinterest #F05F5C;
 
 
   
-              <div class="container-fluid" id="landing-section">
-                
-                  <div class="row mt-1 h-100">
+              <div class="container-fluid"> 
+                  <div class="row h-100 m-0 p-0">
                     <div class="col-md-6">
-                  
-                      <div class="intro-container">
+                      <div class="intro-text">
                         <h1>Howdy<span>,</span></h1>
                         <p id="subheading">I'm <span>Phoebe</span></p>
-                      </div>           
-                     
+                      </div>             
                     </div>
-
                       <div class="col-md-6"> 
-                        <img id="intro-img" class="right p-5 mr-5" width=70% src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Flogo_fv.png?v=1612031382492" alt="girl-image">
-                  </div> 
+                        <div class="intro-img">
+                        <img width=70% src="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2Flogo_fv.png?v=1612031382492" alt="girl-image">
+                      </div>
+                    </div> 
               </div>
             </div>
-            <div class="container-fluid">
+        <!-- <div class="container-fluid">
               <div class="row p-0 m-0 h-100">
                 <div class="col-md-5">
                   <img id="intro-text" class="p-5" width=100% src="https://cdn.glitch.com/c0dcb651-5b19-4756-a6e6-25b3982ca367%2Fgirl.png?v=1614393658226" alt="girl-image">
@@ -500,7 +406,6 @@ Pinterest #F05F5C;
                 <div class="col-md-7">
                   <p id="intro-backg2" class="paragraph-landing">I’m an accountant based in New York. When I am not working on debits and credits, I love to create interactive visualizations using publicly available data. I am an easygoing and friendly person. In my free time, I enjoy Zumba and watching stand-up comedy. Sometimes, I try to throw some jokes into conversations with friends. Most times, they fall flat—but, hey, I try.</p>
                       
-                  <!-- <button id="intro-backg3" type="button" class="resume white-text btn waves-effect waves-light mt-3"><a href="https://cdn.glitch.com/17e006a1-9c5d-4fc1-a7f3-e201dd73c425%2FResume.pdf?v=1609702107940" target="_blank" download class="white-text">View My Resume</a></button>  -->
                 </div>
               </div>
             </div>
@@ -565,8 +470,8 @@ Pinterest #F05F5C;
           <span></span></a>
           <a href="#" class="icon-button linkedin"><i class="fa fa-linkedin"></i><span></span></a>
           <a href="#" class="icon-button pinterest"><i class="fa fa-pinterest"></i><span></span></a>
-          </div>
-       
+          </div> -->
+   
    
         <div class="fixed-bottom footer">
           <p>&copy 2021 Phoebe Yaheng Wu</p>
